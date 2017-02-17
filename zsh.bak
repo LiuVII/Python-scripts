@@ -1,0 +1,20 @@
+rm -rf ~/Library/Logs/DiagnosticReports/*.crash
+alias gccmy="gcc -Wall -Werror -Wextra"
+alias gccsan="gcc -fsanitize=address -Wall -Werror -Wextra"
+alias norm="norminette -R CheckForbiddenSourceHeader"
+alias mkcd="mkdir $1 && cd $1"
+alias 42FileChecker='sh ~/Desktop/filechacker/42FileChecker.sh'
+export PATH=/nfs/2016/m/mfilipch/.gem/ruby/2.0.0/bin:$PATH
+export PYTHONPATH=$PYTHONPATH:/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python
+export FT42_UID=e985cacb41ff4e2a48a0c6cff39bfa22a9e852e374e75a340cf52188b22c70a6
+export FT42_SECRET=5b6ce0af32b2ccef0ebc10a49ed81060a8fe90e8b69851dea8a5c3fa1920dc0d
+USER=$(whoami)
+export USER
+MAIL="$USER@student.42.us.org"
+export MAIL
+alias brew="/Volumes/Storage/goinfre/$(whoami)/homebrew/bin/brew"
+export PATH="/Volumes/Storage/goinfre/mfilipch/homebrew/bin:$PATH"
+LUNCHY_DIR=$PATH/../extras
+if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
+	. $LUNCHY_DIR/lunchy-completion.zsh
+fi
